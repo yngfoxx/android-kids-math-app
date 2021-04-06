@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Math App</string>
+    <string name="addition"> + | [Classic] add mode</string>
+    <string name="subtraction"> - | [Classic] minus mode</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="play">Play</string>
+    <string name="game_title">Game title</string>
+    <string name="mode_menu_title">Mode menu title</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="used_to_pause_the_game">Used to pause the game</string>
+    <string name="holds_the_mathematical_questions">Holds the mathematical questions</string>
+    <string name="button_holder_background">button holder background</string>
+    <string name="question">3 + 3 = ?</string>
+    <string name="numpad_0">numpad 0</string>
+    <string name="numpad_1">numpad 1</string>
+    <string name="numpad_2">numpad 2</string>
+    <string name="numpad_3">numpad 3</string>
+    <string name="numpad_4">numpad 4</string>
+    <string name="numpad_5">numpad 5</string>
+    <string name="numpad_6">numpad 6</string>
+    <string name="numpad_7">numpad 7</string>
+    <string name="numpad_8">numpad 8</string>
+    <string name="numpad_9">numpad 9</string>
+    <string name="apple_movement_limit_area">Apple movement limit area</string>
+    <string name="number_6">Number 6</string>
+    <string name="number_0">Number 0</string>
+    <string name="number_1">Number 1</string>
+    <string name="number_2">Number 2</string>
+    <string name="number_3">Number 3</string>
+    <string name="number_4">Number 4</string>
+    <string name="number_5">Number 5</string>
+    <string name="number_7">Number 7</string>
+    <string name="number_8">Number 8</string>
+    <string name="number_9">Number 9</string>
+    <string name="draggable_apple">Draggable apple</string>
+    <string name="apple_holder">apple holder</string>
+    <string name="resultText">3 + 2 = 5</string>
+    <string name="star">star</string>
+    <string name="play_button">Play Button</string>
+</resources>

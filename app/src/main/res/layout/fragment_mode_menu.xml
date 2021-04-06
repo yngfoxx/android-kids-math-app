@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modeMenuTitle"
+        app:layout_constraintVertical_bias="0.118">
+
+        <Button
+            android:id="@+id/btn_add_mode"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/default_button"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="40dp"
+            android:paddingTop="10dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="10dp"
+            android:text="@string/addition"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498" />
+
+        <Button
+            android:id="@+id/btn_subtract_mode"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:background="@drawable/default_button"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="40dp"
+            android:paddingTop="10dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="10dp"
+            android:text="@string/subtraction"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/modeMenuTitle"
+        android:layout_width="338dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginLeft="74dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginRight="74dp"
+        android:contentDescription="@string/mode_menu_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mode_menu_title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

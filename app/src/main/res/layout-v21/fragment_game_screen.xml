@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/game_screen_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8E7E7">
+
+    <TextView
+        android:id="@+id/countDown"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:elevation="40sp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#D0FFFFFF"
+        android:textSize="90sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/pause_btn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/used_to_pause_the_game"
+        android:scaleType="centerInside"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pause_button" />
+
+    <ImageView
+        android:id="@+id/keypad_container"
+        android:layout_width="375dp"
+        android:layout_height="231dp"
+        android:layout_marginTop="90dp"
+        android:contentDescription="@string/button_holder_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/keypad_background" />
+
+    <ImageView
+        android:id="@+id/question_header"
+        android:layout_width="231dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/holds_the_mathematical_questions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pause_btn"
+        app:srcCompat="@drawable/question_header" />
+
+    <TextView
+        android:id="@+id/question_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/question_header"
+        app:layout_constraintEnd_toEndOf="@+id/question_header"
+        app:layout_constraintStart_toStartOf="@+id/question_header"
+        app:layout_constraintTop_toTopOf="@+id/question_header" />
+
+
+    <LinearLayout
+        android:id="@+id/button_holder"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/keypad_container"
+        app:layout_constraintEnd_toEndOf="@+id/keypad_container"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="@+id/keypad_container"
+        app:layout_constraintTop_toTopOf="@+id/keypad_container"
+        app:layout_constraintVertical_bias="0.61">
+
+        <LinearLayout
+            android:id="@+id/row_0"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/num_btn_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/number_0"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/btn_0" />
+
+            <ImageButton
+                android:id="@+id/num_btn_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/number_1"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/btn_1" />
+
+            <ImageButton
+                android:id="@+id/num_btn_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/number_2"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/btn_2" />
+
+            <ImageButton
+                android:id="@+id/num_btn_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/number_3"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/btn_3" />
+
+            <ImageButton
+                android:id="@+id/num_btn_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/number_4"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/btn_4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row_1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/num_btn_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/number_5"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/btn_5" />
+
+            <ImageButton
+                android:id="@+id/num_btn_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/number_6"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/btn_6" />
+
+            <ImageButton
+                android:id="@+id/num_btn_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/number_7"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/btn_7" />
+
+            <ImageButton
+                android:id="@+id/num_btn_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/number_8"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/btn_8" />
+
+            <ImageButton
+                android:id="@+id/num_btn_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/number_9"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/btn_9" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/boundary_indicator"
+        android:layout_width="368dp"
+        android:layout_height="4dp"
+        android:contentDescription="@string/apple_movement_limit_area"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/keypad_container"
+        app:srcCompat="@drawable/boundary_indicator" />
+
+    <ImageView
+        android:id="@+id/white_plate"
+        android:layout_width="307dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="304dp"
+        android:contentDescription="@string/apple_holder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boundary_indicator"
+        app:layout_constraintVertical_bias="0.86"
+        app:srcCompat="@drawable/plate_white" />
+
+    <ImageView
+        android:id="@+id/apple_8"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="212dp"
+        android:contentDescription="@string/draggable_apple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.606"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boundary_indicator"
+        app:layout_constraintVertical_bias="0.529"
+        app:srcCompat="@drawable/apple" />
+
+    <ImageView
+        android:id="@+id/apple_6"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="212dp"
+        android:contentDescription="@string/draggable_apple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.606"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boundary_indicator"
+        app:layout_constraintVertical_bias="0.422"
+        app:srcCompat="@drawable/apple" />
+
+    <ImageView
+        android:id="@+id/apple_9"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="212dp"
+        android:contentDescription="@string/draggable_apple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boundary_indicator"
+        app:layout_constraintVertical_bias="0.475"
+        app:srcCompat="@drawable/apple" />
+
+    <ImageView
+        android:id="@+id/apple_1"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="212dp"
+        android:contentDescription="@string/draggable_apple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boundary_indicator"
+        app:layout_constraintVertical_bias="0.529"
+        app:srcCompat="@drawable/apple" />
+
+    <ImageView
+        android:id="@+id/apple_3"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="212dp"
+        android:contentDescription="@string/draggable_apple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.764"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boundary_indicator"
+        app:layout_constraintVertical_bias="0.475"
+        app:srcCompat="@drawable/apple" />
+
+    <ImageView
+        android:id="@+id/apple_4"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="212dp"
+        android:contentDescription="@string/draggable_apple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.303"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boundary_indicator"
+        app:layout_constraintVertical_bias="0.475"
+        app:srcCompat="@drawable/apple" />
+
+    <ImageView
+        android:id="@+id/apple_5"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="212dp"
+        android:contentDescription="@string/draggable_apple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boundary_indicator"
+        app:layout_constraintVertical_bias="0.529"
+        app:srcCompat="@drawable/apple" />
+
+    <ImageView
+        android:id="@+id/apple_7"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="212dp"
+        android:contentDescription="@string/draggable_apple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.703"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boundary_indicator"
+        app:layout_constraintVertical_bias="0.529"
+        app:srcCompat="@drawable/apple" />
+
+    <ImageView
+        android:id="@+id/apple_2"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="212dp"
+        android:contentDescription="@string/draggable_apple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.338"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boundary_indicator"
+        app:layout_constraintVertical_bias="0.529"
+        app:srcCompat="@drawable/apple" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
